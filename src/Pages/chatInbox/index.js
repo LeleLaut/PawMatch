@@ -39,7 +39,7 @@ const Header = () => {
   }}
 >
   <Image
-    source={require('./ju.jpg')}
+    source={require('../../assets/image/foto.jpg')}
     style={{ width: 40, height: 40, borderRadius: 25, marginLeft: 15, marginTop: 10, padding: 25 }}
   />
   <View style={{ marginLeft: 10, flex:1 }}>
@@ -56,7 +56,7 @@ const Header = () => {
   }}
 >
   <Image
-    source={require('./galih.jpg')}
+    source={require('../../assets/image/foto.jpg')}
     style={{ width: 40, height: 40, borderRadius: 25, marginLeft: 15, marginTop: 10, padding: 25 }}
   />
   <View style={{ marginLeft: 10, flex:1 }}>
@@ -73,7 +73,7 @@ const Header = () => {
   }}
 >
   <Image
-    source={require('./pia.jpg')}
+    source={require('../../assets/image/foto.jpg')}
     style={{ width: 40, height: 40, borderRadius: 25, marginLeft: 15, marginTop: 10, padding: 25 }}
   />
   <View style={{ marginLeft: 10, flex:1 }}>
@@ -90,7 +90,7 @@ const Header = () => {
   }}
 >
   <Image
-    source={require('./keket.jpg')}
+    source={require('../../assets/image/foto.jpg')}
     style={{ width: 40, height: 40, borderRadius: 25, marginLeft: 15, marginTop: 10, padding: 25 }}
   />
   <View style={{ marginLeft: 10, flex :1 }}>
@@ -107,7 +107,7 @@ const Header = () => {
   }}
 >
   <Image
-    source={require('./hans.jpg')}
+    source={require('../../assets/image/foto.jpg')}
     style={{ width: 40, height: 40, borderRadius: 25, marginLeft: 15, marginTop: 10, padding: 25 }}
   />
   <View style={{ marginLeft: 10, flex:1 }}>

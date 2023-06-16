@@ -1,13 +1,10 @@
 import React from 'react';
 import { View, Image, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
-const Register = () => {
+const App = () => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.backButton}>
-        <Image source={require('.//src/image/back.png')} style={styles.backIcon} />
-      </TouchableOpacity>
-      <Image source={require('./src/image/pawmatch.png')} style={styles.logo} />
+      <Image source={require('../../assets/image/pawmatch.jpg')} style={styles.logo} />
       <Text style={styles.appName}>Pawmatch</Text>
       <Text style={styles.login}>Create your account</Text>
       <TextInput style={styles.input} placeholder="username" placeholderTextColor={'#000000'} />
@@ -20,10 +17,10 @@ const Register = () => {
       <Text style={styles.login}>- or sign in with -</Text>
       <View style={styles.socialLogin}>
         <TouchableOpacity style={styles.socialButton}>
-          <Image source={require('./src/image/gmail.png')} style={styles.socialLogo} />
+          <Image source={require('../../assets/image/gmail.png')} style={styles.socialLogo} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.socialButton}>
-          <Image source={require('./src/image/facebook.png')} style={styles.socialLogo} />
+          <Image source={require('../../assets/image/facebook.png')} style={styles.socialLogo} />
         </TouchableOpacity>
       </View>
     </View>
@@ -46,7 +43,6 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     marginTop: 16,
     marginBottom: 8,
-    fontfamily: 'Patrick Hand SC',
     color: '#702625',
   },
   login: {
@@ -54,7 +50,6 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     marginTop: 8,
     marginBottom: 32,
-    fontfamily: 'Inter',
     color: '#702625',
   },
   input: {
@@ -105,4 +100,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Register;
+export default App;

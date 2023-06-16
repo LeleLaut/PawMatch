@@ -4,7 +4,7 @@ import { View, Image, Text, TextInput, TouchableOpacity, StyleSheet } from 'reac
 const loginScreen = () => {
   return (
     <View style={styles.container}>
-      <Image source={require('./src/image/pawmatch.png')} style={styles.logo} />
+      <Image source={require('../../assets/image/pawmatch.jpg')} style={styles.logo} />
       <Text style={styles.appName}>Pawmatch</Text>
       <Text style={styles.login}>Login to your account</Text>
       <TextInput style={styles.input} placeholder="Email" placeholderTextColor={'#000000'} />
@@ -15,10 +15,10 @@ const loginScreen = () => {
       <Text style={styles.login}>- or sign in with -</Text>
       <View style={styles.socialLogin}>
         <TouchableOpacity style={styles.socialButton}>
-          <Image source={require('./src/image/gmail.png')} style={styles.socialLogo} />
+          <Image source={require('../../assets/image/gmail.png')} style={styles.socialLogo} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.socialButton}>
-          <Image source={require('./src/image/facebook.png')} style={styles.socialLogo} />
+          <Image source={require('../../assets/image/facebook.png')} style={styles.socialLogo} />
         </TouchableOpacity>
       </View>
       <Text style={styles.login}>Don't have an account? Sign Up</Text>
@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     marginTop: 16,
     marginBottom: 32,
-    fontFamily: 'Patrick Hand SC',
     color: '#702625',
   },
   login: {
@@ -50,7 +49,6 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     marginTop: 16,
     marginBottom: 32,
-    fontfamily: 'Inter',
     color: '#702625',
   },
   input: {

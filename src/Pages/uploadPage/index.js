@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, View, Image, ScrollView, TouchableOpacity } from 'react-native';
-import { Button, Avatar, Text, Card, List, Divider, TextInput, Checkbox, } from 'react-native-paper';
+import { IconButton, Button, Avatar, Text, Card, List, Divider, TextInput, Checkbox, } from 'react-native-paper';
 
 const App = () => {
     const [text1, setText1] = React.useState('');
@@ -12,6 +12,13 @@ const App = () => {
         <ScrollView>
             <View >
                 <View style={styles.topHead}>
+                    <IconButton
+                        icon="chevron-left"
+                        iconColor='white'
+                        containerColor='#6E2625'
+                        size={24}
+                        onPress={() => console.log('Pressed')}
+                    />
                     <Text style={styles.headFont}>UPLOAD</Text>
                 </View>
                 <View style={styles.contentContainer}>
@@ -53,10 +60,10 @@ const App = () => {
                         outlineStyle={{ borderRadius: 10 }}
                         textAlignVertical='top'
                         textAlign='left'
-                        contentStyle={{ margin: 10, fontSize: 14 }} 
-                        />
+                        contentStyle={{ margin: 10, fontSize: 14 }}
+                    />
                     <TouchableOpacity>
-                        <Button style={{ marginVertical: 30, borderRadius: 10 }} mode="contained" buttonColor="#6E2625" textColor="#f0f0f0" onPress={() => console.log('Pressed')}>Sign out</Button>
+                        <Button style={{ marginVertical: 30, borderRadius: 10 }} mode="contained" buttonColor="#6E2625" textColor="#f0f0f0" onPress={() => console.log('Pressed')}>Submit</Button>
                     </TouchableOpacity>
                 </View>
 
@@ -71,10 +78,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#6E2625',
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
-        justifyContent: "center",
+        // justifyContent: "center",
+        alignItems: 'center',
+        flexDirection: 'row'
     },
     headFont: {
-        alignSelf: "center",
+        marginLeft: 'auto',
+        marginRight: 'auto',
         fontSize: 27,
         color: "#f0f0f0",
         opacity: 0.6

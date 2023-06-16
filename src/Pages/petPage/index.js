@@ -1,35 +1,61 @@
 import React from 'react';
-import { View, TouchableOpacity, Image, Text, StyleSheet, Button, ScrollView } from 'react-native';
+import { View, TouchableOpacity, Image, Text, StyleSheet, ScrollView } from 'react-native';
+import { IconButton, Button } from 'react-native-paper';
 
-const YourScreen = () => {
+const App = () => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Image source={require('.//src/image/Photo.png')} style={styles.backgroundImage} />
-        <TouchableOpacity style={styles.backButton}>
-          <Image source={require('.//src/image/back.png')} style={styles.backIcon} />
-        </TouchableOpacity>
+        <IconButton
+          icon="chevron-left"
+          iconColor='#6E2625'
+          containerColor='white'
+          size={24}
+          style={styles.backButton}
+          onPress={() => console.log('Pressed')}
+        />
+        <Image source={require('../../assets/image/dog1.jpeg')} style={styles.backgroundImage} />
         <View style={styles.contentContainer}>
           <Text style={styles.Nama}>Roti Tawar</Text>
-          <Image source={require('.//src/image/man.png')} style={styles.logo} />
+          <IconButton
+            mode='default'
+            icon="gender-male"
+            size={24}
+            iconColor='blue'
+            containerColor='#E1FFFD'
+          />
         </View>
         <Text style={styles.NamaJenis}>Golden</Text>
         <Text style={styles.NamaJenis}>1 tahun</Text>
         <Text style={styles.NamaJenis}>Cimahi</Text>
         <Text style={styles.Nama}>Status vaksin</Text>
         <View style={styles.contentContainer}>
-          <Image source={require('.//src/image/check.png')} style={styles.logo2} />
+          <IconButton
+            icon="check"
+            iconColor='black'
+            containerColor='white'
+            size={24}
+          />
           <Text style={styles.NamaJenis}>Vaksinasi rabies</Text>
         </View>
         <View style={styles.contentContainer}>
-          <Image source={require('.//src/image/check.png')} style={styles.logo2} />
+          <IconButton
+            icon="check"
+            iconColor='black'
+            containerColor='white'
+            size={24}
+          />
           <Text style={styles.NamaJenis}>Vaksinasi Hepatitis Infeksius</Text>
         </View>
         <Text style={styles.Nama}>Deskripsi</Text>
         <Text style={styles.NamaJenis}>Abdul umurnya sudah 1 tahun, terawat dengan baik, terlatih dengan baik. Sangat nurut, tapi clingy juga. Untuk perintah-perintah sederhana, seperti “sit” dan “sini”, dia bisa responsif. </Text>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Chat</Text>
-        </TouchableOpacity>
+        <Button
+          mode="contained"
+          onPress={() => console.log('Pressed')}
+          style={[styles.button, { alignSelf: 'flex-end', margin:10, width: 150 }]}
+        >
+          Chat
+        </Button>
       </View>
     </ScrollView>
   );
@@ -46,8 +72,7 @@ const styles = StyleSheet.create({
   },
   backButton: {
     position: 'absolute',
-    backgroundColor: '#fff',
-    borderRadius: 14,
+
     top: 16,
     left: 16,
     zIndex: 999,
@@ -59,6 +84,7 @@ const styles = StyleSheet.create({
   contentContainer: {
     alignItems: 'flex-start',
     flexDirection: 'row',
+    alignItems: 'center',
   },
   Nama: {
     fontSize: 24,
@@ -94,12 +120,7 @@ const styles = StyleSheet.create({
     marginRight: 4,
   },
   button: {
-    width: 70,
-    height: 40,
     bottom: 16,
-    left: '75%',
-    borderWidth: 1,
-    borderRadius: 5,
     backgroundColor: '#702625',
   },
   buttonText: {
@@ -111,4 +132,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default YourScreen;
+export default App;
