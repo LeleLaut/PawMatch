@@ -30,7 +30,8 @@ const App = () => {
                     onPress={() => console.log('Pressed')}
                 />
             </View>
-            <View style={{flexDirection: 'row',justifyContent: 'space-between',}}>
+            <View style={{flexDirection: 'row',justifyContent: 'center',padding : 20}}>
+                <View>
                 <Card>
                     <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
                     <Card.Title title="Card Title" subtitle="Card Subtitle"/>
@@ -39,6 +40,9 @@ const App = () => {
                         <Text variant="bodyMedium">Card content</Text>
                     </Card.Content>
                 </Card>
+                </View>
+
+                <View>
                 <Card>
                     <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
                     <Card.Title title="Card Title" subtitle="Card Subtitle" />
@@ -47,6 +51,8 @@ const App = () => {
                         <Text variant="bodyMedium">Card content</Text>
                     </Card.Content>
                 </Card>
+                </View>
+
             </View>
         </View>
     );
