@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TouchableOpacity, Image, Text, StyleSheet, ScrollView } from 'react-native';
 import { IconButton, Button } from 'react-native-paper';
 
-const App = () => {
+const petPage = () => {
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -132,4 +132,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default petPage;

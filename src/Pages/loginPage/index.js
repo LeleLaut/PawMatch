@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
-const loginScreen = () => {
+const LoginPage = () => {
   return (
     <View style={styles.container}>
       <Image source={require('../../assets/image/pawmatch.jpg')} style={styles.logo} />
@@ -87,4 +87,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default loginScreen;
+export default LoginPage;

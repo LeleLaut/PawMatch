@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { PaperProvider, Button, Avatar, Text, Card, List, Divider } from 'react-native-paper';
 
-const App = () => {
+const ProfilePage = () => {
 
     return (
         <PaperProvider>
@@ -84,4 +84,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default App;
+export default ProfilePage;

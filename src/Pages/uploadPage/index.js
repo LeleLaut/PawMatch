@@ -1,8 +1,8 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, Image, ScrollView, TouchableOpacity } from 'react-native';
-import { IconButton, Button, Avatar, Text, Card, List, Divider, TextInput, Checkbox, } from 'react-native-paper';
+import { StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native';
+import { IconButton, Button, Text, List, TextInput, Checkbox, } from 'react-native-paper';
 
-const App = () => {
+const UploadPage = () => {
     const [text1, setText1] = React.useState('');
     const [text2, setText2] = React.useState('');
     const [checked1, setChecked1] = React.useState(false);
@@ -12,13 +12,13 @@ const App = () => {
         <ScrollView>
             <View >
                 <View style={styles.topHead}>
-                    <IconButton
+                    {/* <IconButton
                         icon="chevron-left"
                         iconColor='white'
                         containerColor='#6E2625'
                         size={24}
                         onPress={() => console.log('Pressed')}
-                    />
+                    /> */}
                     <Text style={styles.headFont}>UPLOAD</Text>
                 </View>
                 <View style={styles.contentContainer}>
@@ -110,5 +110,4 @@ const styles = StyleSheet.create({
 }
 )
 
-
-export default App;
+export default UploadPage;

@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Image, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
-const App = () => {
+const RegisterPage = () => {
   return (
     <View style={styles.container}>
       <Image source={require('../../assets/image/pawmatch.jpg')} style={styles.logo} />
-      <Text style={styles.appName}>Pawmatch</Text>
+      <Text style={styles.RegisterPageName}>Pawmatch</Text>
       <Text style={styles.login}>Create your account</Text>
       <TextInput style={styles.input} placeholder="username" placeholderTextColor={'#000000'} />
       <TextInput style={styles.input} placeholder="Email" placeholderTextColor={'#000000'} />
@@ -32,13 +32,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#FFFFFF',
   },
   logo: {
     width: 100,
     height: 100,
   },
-  appName: {
+  RegisterPageName: {
     fontSize: 32,
     fontWeight: 'normal',
     marginTop: 16,
@@ -100,4 +100,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default RegisterPage;

@@ -5,7 +5,7 @@ import { IconButton, Card, LeftContent, Button, Text } from 'react-native-paper'
 const { width } = Dimensions.get('window');
 
 
-const App = () => {
+const HomePage = () => {
   return (
     <ScrollView>
 
@@ -19,6 +19,7 @@ const App = () => {
           containerColor='white'
           size={24}
           onPress={() => console.log('Pressed')}
+          style={{marginHorizontal:20}}
         />
 
         <Text style={{ color: 'white', fontSize: 24, fontWeight: 'bold' }}>
@@ -31,6 +32,7 @@ const App = () => {
           containerColor='white'
           size={24}
           onPress={() => console.log('Pressed')}
+          style={{marginHorizontal:20}}
         />
       </View>
         <View style={{alignSelf:'center'}}>
@@ -165,4 +167,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default HomePage;

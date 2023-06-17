@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
-const App = () => {
+const Splash = () => {
   return (
     <View style={styles.container}>
       <Image source={require('../../assets/image/pawmatch.jpg')} style={styles.image} />
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Splash;

@@ -2,7 +2,7 @@ import React from 'react';
 import { TouchableOpacity, View, Text, Image } from 'react-native';
 import { List, IconButton, Button, Divider } from 'react-native-paper';
 
-const Header = () => {
+const ChatInbox = () => {
   return (
     <View>
      <View style={{
@@ -122,7 +122,7 @@ const Header = () => {
   )
 };
 
-export default Header;
+export default ChatInbox;
 
 
 

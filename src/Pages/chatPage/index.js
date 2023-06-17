@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TextInput, TouchableOpacity, Text, Image, Dimensions, ScrollView, StyleSheet } from 'react-native';
 import { IconButton, Avatar, Card, LeftContent, Button } from 'react-native-paper';
 
-const App = () => {
+const ChatPage = () => {
     return (
 
         <View style={{ flex: 1 }}>
@@ -141,5 +141,5 @@ const styles = StyleSheet.create({
 
 
 
-export default App;
+export default ChatPage;
 
